@@ -1,22 +1,42 @@
 package com.sales.goods.electronic;
 
-//TODO: finish
-public class Smartphone extends Electronic{
+import com.sales.goods.Goods;
 
-    byte numberOfButtons;
-    public Smartphone(long price, String description, Brand brand, byte numberOfButtons) {
-        super(price, description, brand);
-        this.numberOfButtons = numberOfButtons;
+
+
+//TODO: finish
+public class Smartphone extends Goods {
+    private final Brand brand;
+    private final OS os;
+
+    public enum Brand {
+        SAMSUNG,
+        APPLE,
+        HUAWEI,
+        ZTE,
+        XIAOMI
+    }
+    public enum OS {
+        ANDROID,
+        IOS,
+        WINDOWS
     }
 
-    public byte getNumberOfButtons() {
-        return numberOfButtons;
+    public Smartphone(long price, String description, OS os, Brand brand) {
+        super(price, description);
+        this.brand = brand;
+        this.os = os;
+    }
+
+    public OS getOs() {
+        return os;
     }
 
     @Override
     public String toString() {
         return "com.sales.goods.electronic.Smartphone{" +
-                "numberOfButtons=" + numberOfButtons +
+                "os=" + os +
                 '}';
     }
 }
+
