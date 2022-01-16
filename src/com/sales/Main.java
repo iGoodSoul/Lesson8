@@ -35,10 +35,10 @@ public class Main {
 
 
         eShop1.addNewGoods(smartphoneStorage[0]);
-        eShop1.addNewGoods(smartphoneStorage[0]);
-        eShop1.addNewGoods(smartphoneStorage[0]);
-        eShop1.addNewGoods(smartphoneStorage[0]);
-        eShop1.addNewGoods(smartphoneStorage[0]);
+        eShop1.addNewGoods(smartphoneStorage[1]);
+        eShop1.addNewGoods(smartphoneStorage[2]);
+        eShop1.addNewGoods(smartphoneStorage[3]);
+        eShop1.addNewGoods(smartphoneStorage[4]);
 
 
 
